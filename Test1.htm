@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Test Page(Pagina de Testes)
+</title>
+<link rel="stylesheet" type="text/css" href="css/pocb.css" />
+<link rel="stylesheet" href="css/style23.css" type="text/css" data-PolyCalc="1" />
+<link rel="icon" href="https://cdn.pbrd.co/images/4OCR4MJR4.png">
+<meta charset="UTF-8">
+<meta name="keywords" content="Html,Stake's,prints,site,personal website,stake2,staketwo,stakedois,Stake2,stake2 website,izaque sanvezzo,site do izaque sanvezzo,website stake2,computer,prints of computer,poc network,prints of computer network,izaque sanvezzo(stake2),posts,pocb,poc,pocm,prints of computer mobile,pocwp,poc windows phone,prints of computer blocks,w3.css,All rights reserved to Stake's Enterprisetm. @2017,about Izaque Sanvezzo,about stake2,sobre Izaque Sanvezzo,Sobre stake2,Prints of Computer Network,stake2(Izaque Sanvezzo) Personal Website" />
+<meta name="description" content="stake2's Personal Site" />
+<meta name="revised" content="Stake's Enterprisetm, 03/11/2017" />
+<meta name="author" content="Stake Ferreira" />
+<meta http-equiv="refresh" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" href="css/w3.css" />
+<script src="js/jquery-3-2-1.js"></script>
+</head>
+<body onload="startTime()" style="backgroundimage:file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens\Desenhos\Testes\checklist.png;">
+
+<script>
+function openCity(evt, cityName) {
+    // Declara todas as variaveis
+    var i, tabcontent, tablinks;
+
+    // Pega todos os elementos com class="tabcontent" e esconde eles
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Pega todos os elementos com class="tablinks" e remove o "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Mostra a aba atual, e adiciona uma "active" classe para o link que abriu a aba
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+
+
+<div class="image city">
+<img src="img\checklist.png" alt="" />
+</div>
+
+<div id="all" class="city" style="display:none">
+<img src="img\checklist 2.png" alt="" />
+</div>
+
+<div id="check1" class="city" style="display:none">
+<img src="img\checklist 1.png" alt="" />
+</div>
+
+<div id="check2" class="city" style="display:none">
+<img src="img\checklist 2s.png" alt="" />
+</div>
+
+<div id="off1" class="city" style="display:none">
+<img src="img\checklist.png" alt="" />
+</div>
+
+<div id="off2" class="city" style="display:none">
+<img src="img\checklist.png" alt="" />
+</div>
+
+<h2 class="list1">Escrever Historia</h2>
+<h2 class="list2">Jogar minecraft survival e skyblock</h2>
+
+
+<button class="w3-button w3-blue w3-text-black w3-float-right" onclick="openCity('check1')">Checar 1</button><button class="w3-button w3-red w3-text-black w3-float-right" onclick="openCity('off1')">OFF</button>
+<br>
+<button class="w3-button w3-blue w3-text-black w3-float-right" onclick="openCity('check2')">Checar 2</button><button class="w3-button w3-red w3-text-black w3-float-right" onclick="openCity('off2')">OFF</button><br>
+<button class="w3-button w3-gray w3-text-black w3-float-right" onclick="openCity('all')">Todas</button>
+
+<style>
+.image { 
+   position: relative; 
+   width: 150%; /* for IE 6 */
+
+}
+
+h2.list1 { 
+   position: absolute; 
+   TOP:1px;
+   LEFT:60px ;
+   color:green;
+   width: 50%;
+}
+
+h2.list2 { 
+   position: absolute; 
+   TOP:43px;
+   LEFT:60px ;
+   color:green;
+   width:50%;
+}
+</style>
+
+</body>
+</html>

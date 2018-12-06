@@ -1,0 +1,989 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Prints of Computer Blocks
+</title>
+<link rel="stylesheet" type="text/css" href="css/pocb.css" />
+<link rel="stylesheet" href="css/style23.css" type="text/css" data-PolyCalc="1" />
+<link rel="icon" href="https://cdn.pbrd.co/images/4OCR4MJR4.png">
+<meta charset="UTF-8">
+<meta name="keywords" content="Html,Stake's,prints,site,personal website,stake2,staketwo,stakedois,Stake2,stake2 website,izaque sanvezzo,site do izaque sanvezzo,website stake2,computer,prints of computer,poc network,prints of computer network,izaque sanvezzo(stake2),posts,pocb,poc,pocm,prints of computer mobile,pocwp,poc windows phone,prints of computer blocks,w3.css,All rights reserved to Stake's Enterprisetm. @2017,about Izaque Sanvezzo,about stake2,sobre Izaque Sanvezzo,Sobre stake2,Prints of Computer Network,stake2(Izaque Sanvezzo) Personal Website" />
+<meta name="description" content="stake2's Personal Site" />
+<meta name="revised" content="Stake's Enterprisetm, 24/01/2018" />
+<meta name="author" content="Stake Ferreira" />
+<meta http-equiv="refresh" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" href="css/w3.css" />
+<script src="js/jquery-3-2-1.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body onload="startTime()">
+
+<!-- "ir para o topo" e "ir para o final" -->
+<a href="top"></a>
+
+<a href="#bot"><button class="w3-transparent w3-display-bottomright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OLqp1uNA.jpg" alt="down button" /></button></a>
+
+ <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
+<script>
+//<![CDATA[
+var audio;var playlist;var tracks;var current;initaudio();function initaudio(){current=0;audio=$('audio');playlist=$('#playlist');tracks=playlist.find('li a');len=tracks.length-1;audio[0].volume=1;playlist.find('a').click(function(e){e.preventDefault();link=$(this);current=link.parent().index();runaudio(link,audio[0])});audio[0].addEventListener('ended',function(e){current++;if(current>len){current=0;link=playlist.find('a')[0]}else{link=playlist.find('a')[current]}runaudio($(link),audio[0])})}function runaudio(link,player){player.src=link.attr('href');par=link.parent();par.addClass('active').siblings().removeClass('active');audio[0].load();audio[0].play()}
+//]]>
+</script> 
+
+<script>
+// Filter
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDIV");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<div class="date w3-container w3-display-topright w3-text-cyan">
+<i>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+
+    if (i < 10) {i = "00" + i};  // add zero in front of numbers < 10
+}
+</script><h1>
+<div id="txt"></div><script>document.write(new Date().toLocaleDateString());</script></h1>
+</i></div>
+
+<!-- script de mudança de abas -->
+<script>
+function openCity(evt, cityName) {
+    // Declara todas as variaveis
+    var i, tabcontent, tablinks;
+
+    // Pega todos os elementos com class="tabcontent" e esconde eles
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Pega todos os elementos com class="tablinks" e remove o "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Mostra a aba atual, e adiciona uma "active" classe para o link que abriu a aba
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+<!-- mudança de abas link OU ação -->
+<a href="javascript:void(0)" class="tablinks" onclick="openCity(event, '')" id="defaultOpen"></a>
+
+<!-- buttons that go o sitemap and other websites of mine -->
+<div class="w3-bar">
+  <button class="smap w3-bar-item w3-white w3-border-0" onclick="window.open('../Sitemap.html');">
+    <h2>Sitemap</h2></button>
+
+  <button class="poc" onclick="window.open('../Prints of Computer/Prints of Computer.html');">
+    <img src="img/poc.png" alt="poc logo" width="107" height="94"></button>
+
+  <button class="pocb" onclick="window.open('../Prints of Computer Blocks/Prints of Computer Blocks.html');">
+    <img src="img/pocb.png" alt="pocb logo" width="107" height="94"></button>
+
+  <button class="pocm" onclick="window.open('../Prints of computer mobile(PC Rapido do pai EDITION)/Prints of Computer Mobile.html');">
+    <img src="img/POCM logo.png" alt="pocm logo" width="107" height="94"></button>
+
+  <button class="nw" onclick="window.open('../Noteblock Website/Noteblock Website.html');">
+    <img src="img/nw.png" alt="nw logo" width="106" height="94"></button>
+
+  <button class="posts" onclick="window.open('../Posts/Posts.html');">
+    <img src="img/posts.png" alt="posts logo" width="106" height="94"></button><br>
+</div>
+<div class="w3-container">
+  <div class="w3-dropdown-hover w3-display-topmiddle">
+    <button class="w3-button w3-black">Abas(Tabs)</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-2 w3-light-grey" id="myDIV">
+      <input class="w3-input w3-padding" type="text" placeholder="Search.." id="myInput" onkeyup="myFunction()">
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('images')">Imagens(Images)</button>
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('imagesex')">Imagens Expandidas(Expanded Images)</button>
+  <button class="w3-bar-item w3-button w3-purple w3-medium w3-text-black" onclick="openCity('gifs')">GIFS</button>
+  <button class="w3-bar-item w3-button w3-purple w3-text-black" onclick="openCity('gifsex')">Gifs Expandidas(Expanded Gifs)</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('blocklist')">Textos(Texts)</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('eitas')">Eitas for the night</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('animes')">Animes e Desenhos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ff00;" onclick="openCity('music')">Musicas(Songs)</button>
+  <button class="w3-bar-item w3-button w3-medium w3-text-white" style="background-color:#000099" onclick="openCity('video')">Videos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ffff;" onclick="openCity('testarea')">Area de Testes(Test Area)</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('game')">Game</button>
+  <button class="w3-bar-item w3-button w3-red w3-text-black" onclick="openCity('xsync')">Xsync</button>
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('text projects')">Historias e Textos(Stories and Texts)</button>
+  <button class="w3-bar-item w3-button w3-blue w3-text-black" onclick="openCity('links')">Sobre mim(About me)</button>
+  <button class="w3-bar-item w3-button w3-cyan w3-text-black" onclick="openCity('change')">Log de Mudanças(Changelog)</button>
+  <button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('aniverd')">X</button>
+  </div>
+ </div>
+</div>
+<br><br>
+ <div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('images')">Imagens(Images)</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('blocklist')">Textos(Texts)</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ff00;" onclick="openCity('music')">Musicas(Songs)</button>
+  <button class="w3-bar-item w3-button w3-medium w3-text-white" style="background-color:#000099" onclick="openCity('video')">Videos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ffff;" onclick="openCity('testarea')">Area de Testes(Test Area)</button>
+<!--  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('game')">Jogo(Game)</button> -->
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('text projects')">Historias e Textos(Stories and Texts) <span style="color:red;">Novo!(New!)</span></button>
+  <button class="w3-bar-item w3-button w3-blue w3-text-black" onclick="openCity('links')">Sobre mim(About me)</button>
+  <button class="w3-bar-item w3-button w3-cyan" onclick="openCity('change')">Log de Mudanças(Changelog)</button>
+  <button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('aniverd')">X</button>
+</div>
+<br><br>
+<button class="w3-btn w3-orange" onclick="window.open('POCBlocks WP Version/Prints of Computer Blocks WP.html');">WP Version</button>
+<button class="w3-btn w3-white" onclick="openCity('tut')">Tutorial</button>
+<br><br>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('text projects')">Novo Capitulo de "A Vida de Pequenata"!! (Capitulo 7)</button>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('text projects')">New Chapter of "Life of Littetato"!! (Chapter 7)</button><br>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('text projects')">Nova parte do Diáro adicionada(block 99.1,100,101,102)!</button>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('text projects')">New part of Diário added(block 99.1,100,101,102)!</button>
+<br><br>
+
+<h4>
+Esse site é feito com o intuito de testar minhas(Izaque/Isaac) Habilidades em HTML, e tambem mostrar histórias minhas, sobre mim, e minha identidade(stake2) na internet.<br>
+This site is made to test my(Izaque/Isaac) skills in HTML, and also to show my stories, about me, and my identity(stake2) on the internet.<br>
+</h4>
+
+<div id="tut" class="city" style="display:none">
+<br>
+<button class="w3-btn w3-white" onclick="openCity('tutpt')">Tutorial Português Brasileiro(Brazilian Portuguese)</button>
+<button class="w3-btn w3-white" onclick="openCity('tuten')">Tutorial English(Inglês)</button>
+<br>
+</div>
+
+<div id="tutpt" class="city" style="display:none">
+<br>
+<pre>
+<h5>
+<button class="w3-btn w3-white" onclick="openCity('tut')"><-</button>
+Esse é o tutorial do site.
+
+Você pode clicar nos botões acima para abrir abas como imagens, musicas, videos, historias.
+Você pode clicar no "X" para fechar as abas.
+O Texto "<span style="color:red;">Novo!</span>" significa que eu(Izaque) adicionei uma nova coisa naquela aba.
+</h5>
+</pre>
+</div>
+
+<div id="tuten" class="city" style="display:none">
+<br>
+<pre>
+<h5>
+<button class="w3-btn w3-white" onclick="openCity('tut')"><-</button>
+This is the tutorial of the site.
+
+You can click on the buttons above to open tabs like images, songs, videos, stories.
+You can click on the "X" to close the tabs.
+The "<span style="color:red;">New!</span>" text means that i(Isaac) added something new to that tab.
+</h5>
+</pre>
+</div>
+
+<div id="change" class="city" style="display:none">
+<pre>
+<h3>
+English(inglês)                                                     /                Português Brasileiro(Brazilian Portuguese)
+20:51 27/10/2017: Updated "Sobre mim(About me)" tab                 /                20:51 27/10/2017: Atualizado a aba "Sobre mim(About me)"
+23:19 03/11/2017: Added "X" button to close tabs                    /                23:19 03/11/2017: Adicionado botão "X" pra fechar abas
+14:47 04/12/2017: Removed Diário's Birthday Pic                     /                14:47 04/12/2017: Removido foto do aniversário do Diário
+03:06 10/12/2017: Modified bar links                                /                03:06 10/12/2017: Modificado os links da barra
+03:55 10/12/2017: Added Tutorial to the site on the front tab       /                03:55 10/12/2017: Adicionado tutorial para o site na aba frontal
+</h3>
+</pre>
+</div>
+
+<!-- Wikia(Sobre mim[stake2]) -->
+<div id="links" class="city" style="display:none">
+<br><br>
+<h3>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('engw')">English(inglês)</button><br>
+<button class="w3-btn w3-white w3-text-black" onclick="openCity('ptbrw')">Português Brasileiro(Brazilian Portuguese)</button><br>
+<br>
+Wikia: <a href="http://pt-br.stake2.wikia.com/wiki/Wiki_Stake2">http://pt-br.stake2.wikia.com/wiki/Wiki_Stake2</a><br>
+<br>
+English(inglês): <a href="http://pt-br.stake2.wikia.com/wiki/About_me">http://pt-br.stake2.wikia.com/wiki/About_me</a><br>
+<br>
+Português Brasileiro(Brazilian Portuguese): <a href="http://pt-br.stake2.wikia.com/wiki/Come%C3%A7o_da_Wikia">http://pt-br.stake2.wikia.com/wiki/Come%C3%A7o_da_Wikia</a><br>
+</h3>
+</div>
+
+<div id="engw" class="city" style="display:none">
+<br><br>
+<pre id='vimCodeElement'>
+<h3>
+This will be my personal Wikia, for those who don't know me my name in the internet is Stake2 and outside the internet it's Izaque Sanvezzo, 
+I'm actually 15 years old, i identify myself as a person of male sex, and my sexual orientation is bissexual. 
+
+I'm a person that likes to do things alone, i don't like to be surrounded by people and to be the center of attention... 
+and i don't like normal things too much, like... i like different things, of the undergroud culture, 
+when it comes to music i prefere instrumental and not so famous songs, i don't get "connected" in the tendencies because i don't like tendencies. 
+
+"The Snakes" was a nickname that i tried to use but i didn't liked, but since that i picked up on a computer for the first time i use the nickname stake2.
+</h3>
+</pre>
+</div>
+
+<div id="ptbrw" class="city" style="display:none">
+<br><br>
+<pre id='vimCodeElement'>
+<h3>
+Essa vai ser uma Wikia pessoal Minha, pra quem não me conhece meu nome na internet é Stake2 e fora da internet é Izaque Sanvezzo, 
+tenho atualmente 15 anos, me identifico como pessoa do sexo masculino, e minha orientação sexual é bissexual. 
+
+Sou uma pessoa que gosta de fazer as coisas sozinho, não gosto de ficar rodeado de pessoas e ser o centro das atenções... 
+e eu não gosto de coisas muito normais assim, tipo eu gosto de coisas diferentes, da cultura underground, 
+se for musica eu prefiro instrumental e musicas não tão famosas, não fico "ligado" nas modinhas novas porque não gosto de modinha. 
+
+"The Snakes" era um nickname que tentei usar mas não gostei, mas desde que eu peguei pela primeira vez num pc eu uso o nome stake2.
+</h3>
+</pre>
+</div>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+} 
+</script>
+
+<!-- div para a aba "music" -->
+<div id="music" class="city" style="display:none">
+<br><br>
+
+<h3 class="w3-red w3-text-black">11 Musicas Famosas</h3>
+
+<h3 class="w3-red w3-text-black">BIGBANG - FANTASTIC BABY</h3>
+<img src="img/fantasticbaby.jpg" alt="fantastic baby logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/K-POP/BIGBANG%20-%20FANTASTIC%20BABY%20M_V.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">BIGBANG - 뱅뱅뱅 (BANG BANG BANG)</h3>
+<img src="img/bangbangbang.jpg" alt="bangbangbang logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/K-POP/BIGBANG%20-%20뱅뱅뱅%20(BANG BANG BANG)%20M_V.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Papa Roach-Face Everything and Rise with lyrics</h3>
+<img src="img/faceeverything.jpg" alt="faceeverything logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../../Camera Uploads/Rock/Papa Roach-Face Everything%20and Rise%20with%20lyrics.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Pegboard Nerds - Gunpoint</h3>
+<img src="img/gunpoint.jpg" alt="gunpoint logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/Pegboard Nerds/[Dubstep]%20-%20Pegboard Nerds%20-%20Gunpoint%20[Monstercat Release].mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Best Gaming Music Mix 2017 | Dubstep, Trap, Drumstep, Electro</h3>
+<img src="img/bestmix.jpg" alt="bestmix logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../../../../../../Downloads/Video/Music Mixes/Best%20Gaming%20Music%20Mix%202017%20_%20Dubstep,%20Trap,%20Drumstep,%20Electro.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+<h3 class="w3-red w3-text-black">Akon - Oh Africa</h3>
+<img src="img/ohafrica.jpg" alt="ohafrica logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/ASDF/Akon%20-%20Oh%20Africa.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+<h3 class="w3-red w3-text-black">Akon - Beautiful ft. Colby O'Donis, Kardinal Offishall</h3>
+<img src="img/beautiful.jpg" alt="beautiful logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/ASDF/Akon%20-%20Beautiful%20ft.%20Colby%20O'Donis,%20Kardinal%20Offishall.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Coyote Kisses - Six Shooter</h3>
+<img src="img/sixshooter.jpg" alt="sixshooter logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/RockORAcoustic/Coyote%20Kisses%20-%20Six%20Shooter.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Blue October - Jump-Rope Pretty-Monkey</h3>
+<img src="https://i.ytimg.com/vi/x1S_3ircBc4/hqdefault.jpg" alt="sixshooter logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../../Camera Uploads/Rock/Blue October - Jump-Rope Pretty-Monkey-Studio.mpeg.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Riot Ten & Sullivan King - Body Bag</h3>
+<button class="w3-btn w3-white" onclick="window.open('https://www.youtube.com/watch?v=l9icYYk7VGw');">
+>Original</button>
+<br>
+<audio controls preload="auto">
+  <source src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Musicas\Albums\RockORAcoustic\Riot Ten & Sullivan King - Body Bag.mp3" type="audio/mpeg">
+</audio>
+
+<h3 class="w3-red w3-text-black">SR71 - Let it Whip</h3>
+<audio controls preload="auto">
+  <source src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Projetos\PCDC Edition\SR71 - Let it Whip.m4a" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">SR71 - Right Now</h3>
+<audio controls preload="auto">
+  <source src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Projetos\PCDC Edition\SR-71 - Right Now.m4a" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+</div>
+
+<div id="video" class="city" style="display:none">
+<br><br>
+<!--
+<h3>Best Gaming Music Mix 2017 | Dubstep, Trap, Drumstep, Electro</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ZhH-o-jzMM" frameborder="0" allowfullscreen></iframe>
+
+<br><br><br><br><br><br><br><br><br>
+<h3>Davie204 - Bass Styles 1</h3>
+ <video width="300" height="200" controls>
+  <source src="../../../Videos/Bass%20Styles.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
+
+<div w3-include-html="PAM.html"></div>
+
+</div>
+
+<div id="testarea" class="city" style="display:none;">
+<br><br>
+
+   <div id="currentData" align="center">
+      <p>Loading Data...</p>
+   </div>
+
+</div>
+
+<div id="lol" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')"><-</button>
+Littletato is a potato that like to do alot of things, like to trip, to do sports, and this is her story...
+
+Intro 
+
+Littletato was a potato that lived alone, she was always tripping and walking through cities, and loved to live and to see new things, one day she found another potato, and then they talked alot...
+
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol1')">Chapter 1</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol2')">Chapter 2</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol3')">Chapter 3</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol4')">Chapter 4</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol5')">Chapter 5</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol6')">Chapter 6</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol7')">Chapter 7</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol1" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 1 
+
+They started to knew each other a little more, That other potato was called Julia and was of pink color, they planned a whole life... they planned what city they would go, what house<br> and a lot of other things, and they traveled to that city that they dreamed of, the city was San Francisco, they bought a house and lived there, once in a while Littletato came out to the shop to buy things, but she didn't<br> bought tatos(potatoes) because that was cannibalism and she thought that this thing that humans made is bad, to put living things there, San Francisco was a city where vegetables and fruits could live safe<br> without humans close, but still vegetables and fruits were sold, other people bought fruits and vegetables to eat, but Littletato thought that that was gross, she only bought meat and milk, and some grains<br> like rice and beans, then Littletato found a friend of her while walking home, the friend was a sweet potato called Yam, Yam was of masculine sex, Yam and Littletato talked a lot, Yam said that in Las Vegas<br> they sold meat and vegetables even if there was Cows in there and they continued to talk, then Littletato finished the conversation and started walking to home again...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol2" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 2
+
+Then Littletato came back to her home, and talked to Julia about the conversation she had with Yam, then she placed the food she bought from shop in the table, she helped Julia prepare the dinner, they made<br> the dinner and ate it, then slept, in the other day Littletato woke up but Julia didn't wake up, Littletato got out of bed and started to make breakfast and drank milk with chocolate and ate some breads<br> with butter, then she came to the room where her and Julia slept, she thought that Julia was so cute sleeping that she didn't woke up her, Littletato had a computer in her house, it was in the living room<br> and was where she had all the information about the world, she then came to the computer and turned it on, she logged in her facebook account and she saw all her friends, even if this friends were just on<br> the internet, she thought that was awesome to have friends, then she became to roll on the page, her friends always posted some news, and one news interested her, it was a news about how New York citizens<br> were trying to fight the fruits and wanting freedom, the news said that fruits was invading New York and the vegetables didn't liked that, Littletato thought that San Francisco was good because of that, the<br> city of San Francisco was stabilized, no fight between the citizens, and then Littletato closed the page and came back to rolling her facebook timeline, then Yam, her old friend called her on the chat, he<br> said that in New York they had good jobs, but then Littletato answered that she already had a home in San Francisco and didn't need to work, then Yam asked how, then she replied that she had a girlfriend in<br> San Francisco, and then Yam said that he forgot that and said that he had to do somethings, Littletato replied the same, they finished the conversation and Littletato signed out of her facebook account, and<br> came out of the house to relax a little, then came back again and closed the door, Julia called her and Littletato came to her room to see what Julia was needing, Julia said that was nothing with a smile of<br> her face, then said that she loved Littletato, Littletato said the same, then Littletato came back to bed to sleep a bit more, she looked on clock and was six am, then Littletato hugged Julia by her back<br> and they slept together...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol3" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 3
+
+Then the clock ringed, Littletato woke up and saw the hours, it was eleven in the morning, she got out of bed to make coffee, and made coffee, she poured coffee in her squared mug, and poured in other mug<br> at the other side of the table to Julia, and she placed butter in her bread and in Julia's, then she came to her bed to wake up Julia, Littletato gave a kiss in the cheek of Julia and said wake up to her,<br> Julia slowly opened her eyes and looked at Littletato with a smile on her face, then Julia hugged Littletato, Littetato smiled and called Julia to eat breakfast, they came to the kitchen and ate while<br> talking about somethings, then Julia said that she was going to call her sister to visit her house, and Littletato said she wish to met Julia's sister, then Julia smiled, Littletato said that she was going<br> to work, Julia smiled and said ok, Littletato carried up the things she needed for the job, and said goodbye to Julia then got out the house and started walking to her job, then she arrived at work, and<br> then started to work, it was a technology company that made smartphones and apps for smartphones, Littletato before leaving the house said that she would arrive home at six, Julia then said that her sister<br> would arrive at six and a half, while Littletato was working Julia was preparing the house to her sister visit, her sister was called Patricia, she had nineteen years old and Julia had eighteen, time<br>passed, Littletato was walking back to home, then she noticed some televisions on a shop window, she heard that a war was happening in Las Vegas, and that vegetables were fighting against some animals,<br> Littletato by seeing that became a little sad, she picked up her phone and looked on the photos, there was a photo of her and Julia hugged together, she smiled and became a little happier, she looked at the<br> hour and saw it was almost six and a half, she turned off the phone and started running to her house, then she finally arrived at home, and Patricia was there, Littletato said hello to Patricia and Patricia<br> said hello back, Julia presented Littletato to Patricia, Patricia to Littletato...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol4" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 4
+
+Patricia said hello to Littletato, and Littletato said hello back, Julia said to them to come eat afternoon coffee, they eat and talked about a lot of things, Patricia said that the city she live had great<br> jobs, they talked a little and Patricia said goodbye to Littletato and Julia, and Julia said she was happy to see her sister again, Littletato thought that was good, and she was happy for Julia, Julia and<br> Littletato came inside the house after saying goodbye to Patricia, and they saw the hours, it was eleven of night, they locked the house and came to the room to sleep, they slept, Littletato woke up and got<br> off bed, she made the morning needs in the bathroom then came to the kitchen to prepare breakfast, she made some breads with butter, and some coffee with milk, then came to wake up Julia, she woke up Julia<br> and they came to eat breakfast, Julia said that in the start when they both moved to San Francisco she thought that was hard to start on a new and big city, but now she is confident, Littletato said she was<br> confident too, they got off the table and Littletato gathered the things for job, she said goodbye to Julia and Julia said goodbye back...
+
+((( Author's note: i writed this while listening to this mix https://www.youtube.com/watch?v=hKYyN1aDfCQ )))
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol5" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 5
+
+Then Littletato was in her job and was thinking about life, she thought she really loved her life, and she thought that was cool to live that life, then she got back to work, she was fixing some code<br> errors, she worked as a debugger but also gave ideas to her boss, she liked that job, and she liked to live in that city, some hours passed and was in the hour of lunch, Littletato brought some packed<br> lunch, it was rice with beans, she ate and came back to work, she thought that the lunch was good, she continued fixing bugs in the code, then some time passed, it was time to go home, she then came to her<br> house, and Julia greeted her, then Littletato came inside the house, she looked at the hours and was six hours of night, she said she was hungry, Julia said she already prepared the dinner, then they locked<br> the house and Littletato and Julia came to the kitchen and ate the dinner, Littletato said the food was delicious, Julia smiled and said thanks, Littletato said she liked some calm and chill music, Julia<br> said she liked too, then they cleaned the table, and Littletato helped Julia with the dishes, then they came to the bedroom and slept, Littletato before falling asleep thought that she was happy, really<br> happy...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol6" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 6
+
+Littletato then woke up, she looked at the clock and saw that was six at the morning, she then looked at the calendar and realized that was saturday, then she slept again, she woke up at eleven in the<br> morning, and then she woke up Julia, Julia and Littletato came to the kitchen to make coffee, they made coffee and breads with butter, and then ate it, Julia said that they could hang out a little,<br> Littletato said that was a good idea, they left the house and locked it, Julia said that she knew a park close to the house, they got there and sat a little and then talked, then they walked to the <br>marketplace to buy food, Littletato bought bread, rice and beans, and some coke, they got home and Julia prepared the lunch, Littletato helped her, they ate and got a little tired, they slept, Littletato<br> woke up first and looked at the hours, it was six at night, Littletato made the dinner and called Julia, they ate and Littletato invited Julia to watch a movie, they had Vegeflix in the tv, they watched<br> while drinking the rest of coke and then slept...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="lol7" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Chapter 7
+
+It was a sunday, Littletato just wanted to sleep the whole day, because that's what people do on sunday, she was awake, Littletato looked at the clock and it was seven<br> in the morning, then she hugged Julia that was in the bed sleeping, then she slept with Julia, she and Julia woke up at the same time, they were rested, and just <br>wanted to have fun, they had a tv and a video game in the living room, they played a lot of games together, and had a lot of fun, Littletato was happy that day, really<br> happy, she had a video game called Vegebox, the video game had a Vegebox Live where you could do a lot of things in the internet, just like a computer, Littletato <br>played a song in the music app called Vegetify, it was some folk music, she liked that chill style music, she and Julia played racing games, first-person-shooter <br>games, they liked that kind of games, Julia said she was happy playing with Littletato, Littetato looked in the clock and it was seven at night, they were hungry, they <br>paused the game called Vegetablefall 2, the sequel had a story and not just a multiplayer, Julia came to the kitchen and made the dinner with help of Littletato, they <br>ate the dinner and then played a little more of Vegetablefall 2, then they slept, before sleeping Littletato said to Julia that she had fun today, and that she want <br>more days like this...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('lol')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')"><-</button>
+Pequenata era uma batata que vivia sozinha, ela estava sempre viajando e andando pelas cidades, e amava viver e ver novas coisas, um dia ela encontrou outra batata, e eles conversaram um monte...
+
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp1')">Capitulo 1</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp2')">Capitulo 2</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp3')">Capitulo 3</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp4')">Capitulo 4</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp5')">Capitulo 5</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp6')">Capitulo 6</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp7')">Capitulo 7</button>
+
+<h5>
+</pre>
+</div>
+
+<div id="avdp1" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 1
+
+Eles começaram a se conhecer um pouco mais, A outra batata se chamava Julia e era rosa, eles planejaram uma vida inteira... eles planejaram que cidade que eles iriam, que casa e muitas outras coisas,<br> e eles viajaram para aquela cidade que eles sonhavam, a cidade era São Francisco, eles compraram uma casa e viveram la, de vez em quando Pequenata ia ao supermercado pra comprar coisas, mas ela não comprava<br> tatas(batatas), porque isso era canibalismo e ela pensou que essa coisa que os humanos fizeram é ruim, colocar coisas vivas la, São Francisco era uma cidade onde vegetais e frutas poderiam viver seguras<br> sem humanos por perto, mas ainda assim vegetais e frutas eram vendidos la, outras pessoas compraram frutas e vegetais pra comer, mas Pequenata achou que isso era nojento, ela comprou só leite, e alguns<br> grãos como arroz e feijão, e então Pequenata encontrou um amigo dela enquanto voltava pra casa, o amigo era uma batata doce chamada Yam, Yam era de sexo masculino, Yam e Pequenata conversaram um monte,<br> Yam disse que em Las vegas eles vendiam carne e vegetais mesmo que havia vacas la e eles continuaram a conversar, então Pequenata terminou a conversa e voltou a andar até em casa...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp2" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 2
+
+E então Pequenata voltou pra casa, e conversou com Julia sobre a conversa que teve com o Yam, e então ela colocou a comida que comprou na mesa, ela ajudou Julia a fazer a janta, eles fizeram o jantar<br> e comeram, e então dormiram, no outro dia Pequenata acordou mas Julia não, Pequenata saiu da cama e começou a fazer o café da manha e bebeu leite com chocolate e comeu alguns pães com manteiga,<br> e então ela foi para o quarto onde Julia e ela dormiam, ela achou que Julia estava tão fofa dormindo que ela não a acordou, Pequenata tinha um computador na casa dela, ele estava na sala de estar e era la que ela<br> tinha toda a informação sobre o mundo, e então ela foi para o computador e ligou ele, ela entrou no facebook e viu todos os amigos dela, mesmo que esses amigos sejam só na internet, ela pensou <br>que era incrível ter amigos, e então ela começou a descer a pagina, os amigos dela sempre postavam noticias, e uma noticia interessou ela, era sobre como os cidadãos de Nova York estavam tentando lutar contra<br> as frutas e querendo liberdade, a noticia falava que as frutas estavam invadindo Nova York e os vegetais não gostaram disso, Pequenata pensou que São Francisco era boa por causa disso, a cidade de São Francisco<br> era estabilizada, sem luta entre os cidadãos, e então Pequenata fechou a pagina e voltou a descer a timeline do facebook, e então Yam, o velho amigo dela chamou ela no bate-papo, ele falou que em Nova York<br> tinha bons trabalhos, mas então Pequenata disse que ela ja tinha uma casa em São Francisco e não precisava trabalhar, e então Yam perguntou como, e então ela respondeu que tinha uma namorada em São<br> Francisco, e então Yam disse que se esqueceu disso e disse que precisava fazer algumas coisas, Pequenata disse o mesmo, eles terminaram a conversa e Pequenata saiu do facebook, e saiu pra fora pra relaxar<br> um pouco, e então voltou pra dentro e fechou a porta, Julia chamou ela e Pequenata foi para o quarto dela pra ver o que Julia precisava, Julia com um sorriso no rosto disse que não era nada, e então disse<br> que amava Pequenata, Pequenata disse o mesmo, e então Pequenata voltou pra cama pra dormir um pouco mais, ela olhou no relogio e era seis horas da manhã, e então Pequenata abraçou Julia por trás e eles<br> dormiram juntos...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp3" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capítulo 3
+
+E então o relogio tocou, Pequenata acordou e olhou as horas, era onze da manhã, ela saiu da cama pra fazer café, e fez café, ela colocou café na caneca quadrada dela, e colocou em outra caneca no outro lado<br> da mesa para Julia, e passou manteiga no pão dela e no da Julia, e então ela foi pra cama dela pra acordar Julia, Pequenata deu um beijo na bocheca de Julia e acorda pra ela, Julia abriu os olhos lentamente<br> e olhou para Pequenata com um sorriso em seu rosto, e então Julia abraçou Littletato, Pequenata sorriu e chamou Julia pra tomar café, eles vieram para a cozinha e comeram enquanto conversavam sobre coisas,<br> e então Julia disse que ela ia chamar a irmã dela pra visitar a casa, e Pequenata disse que queria conhecer a irmã de Julia, e então Julia sorriu, Pequenata disse que ia trabalhar, Julia sorriu e disse ok,<br> Pequenata pegou as coisas que precisava pra trabalhar, e disse ate mais para Julia e então saiu da casa e começou a andar para o trabalho dela, e então ela chegou no trabalho, e começou a trabalhar, era uma<br> empresa de technologia que fazia celulares e aplicativos para celulares, Pequenata antes de sair de casa disse que voltaria as seis, Julia então falou que a irmã dela chegaria seis e meia, enquanto<br> Pequenata estava trabalhando Julia estava preparando a casa para a visita da irmã dela, a irmã dela se chamava Patricia, ela tinha dezenove anos e Julia tinha dezoito , horas se passarãm, Pequenata estava<br> voltando pra casa, e então ela viu algumas televisões em uma vitrine de loja, ela ouviu que uma guerra estava acontecendo em Las Vegas, e que os vegetais estavam lutando contra alguns animais, Pequenata por<br> ver isso ficou um pouco triste, ela pegou o celular e olhou para as fotos, tinha uma foto dela e de JUlia abraçadas, ela sorriu e ficou um pouco feliz, ela olhou as horas e viu que era quase seis e meia,<br> ela bloqueou o celular e começou a correr para a casa dela, e então finalmente chegou em casa, e Patricia estava la, Pequenata falou ola para Patricia e Patricia disse ola de volta, Julia apresentou<br>Pequenata para Patricia, Patricia para Littletato...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp4" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 4
+
+Patricia disse olá para Pequenata, e Pequenata disse olá de volta, Julia disse para eles virem tomar café da tarde, eles comeram e conversaram sobre muitas coisas, Patricia disse que na cidade que ela mora<br> tinha trabalhos bons, eles conversaram um pouco e Patricia disse tchau para Pequenata e Julia, e Julia disse que estava feliz de ver a irmã dela de novo, Pequenata pensou que isso era bom, e ela estava<br> feliz por Julia, Julia e Pequenata entraram em casa depois de dizer tchau para Patricia, e eles olharam as horas, era onze da noite, eles trancaram a casa e foram para o quarto dormir, eles dormiram,<br> Pequenata acordou e saiu da cama, ela fez as necessidades da manhã no banheiro e então foi para a cozinha fazer o café da manhã, ela fez uns pães com manteiga, e um pouco de café com leite, e então veio<br> acordar Julia, ela acordou Julia e eles foram tomar café da manha, Julia disse que no começo quando eles vieram pra São Francisco ela pensou que era dificil começar em uma cidade nova e grande, mas agora<br> ela está confiante, Pequenata disse que estava confiante tambem, eles sairam da mesa e Pequenata pegou as coisas para o trabalho, ela disse tchau para Julia e Julia falou tchau de volta...
+
+((( Nota do autor: eu escrevi isso enquanto ouvia esse mix: https://www.youtube.com/watch?v=hKYyN1aDfCQ )))
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp5" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 5
+
+Então Pequenata estava no trabalho dela e estava pensando sobre a vida, ela pensou que realmente amava a vida dela, e ela pensou que era legal viver essa vida, então ela voltou ao trabalho, ela estava<br> consertando alguns erros de código, ela trabalhava como debugger mas tambem dava ideias para a chefe dela, ela gostava desse trabalho, e ela gostava de viver naquela cidade, algumas horas se passaram e<br> estáva na hora do almoço, Pequenata trouxe uma marmita, era arroz com feijão, ela comeu e voltou ao trabalho, ela pensou que o almoço estava bom, ela continuou consertando os erros no código, e então algum<br> tempo se passou, era hora de ir pra casa, então ela voltou pra casa, e Julia comprimentou ela, então Pequenata entrou na casa, ela olhou para as horas e era seis horas da noite, ela falou que tava com fome,<br> Julia disse que ja preparou o jantar, então eles trancaram a casa e Pequenata e Julia foram para a cozinha e comeram o jantar, Pequenata disse que a janta estáva deliciosa, Julia sorriu e disse obrigado,<br> Pequenata disse que ela gostava de musica calma e relaxante, Julia disse que gostava tambem, então eles limparam a mesa, e Pequenata ajudou Julia com os pratos, então elas foram para o quarto e dormiram,<br> Pequenata antes de dormir pensou que ela estava feliz, muito feliz...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp6" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 6
+
+Pequenata acordou, ela olhou para o relógio e viu que era seis hóras da manhã, ela olhou para o calendário e percebeu que era sábado, então dormiu novamente, ela acordou onze da manhã, e então acordou<br> Julia, Julia e Pequenata foram para a cozinha para fazer café, elas fizeram café e pão com manteiga, e então comeram, Julia disse que elas podiam sair um pouco, Pequenata disse que era uma boa ideia, elas<br> sairam da casa e fecharam ela, Julia disse que conhecia um parque perto da casa, elas foram lá e sentaram um pouco e então conversaram, então andaram para o mercado para comprar comida, Pequenata comprou<br> pão, arroz e feijão, e um pouco de coca-cola, elas voltaram para casa e Julia preparou o almoço, Pequenata a ajudou, elas comeram e ficaram um pouco cansadas,  elas dormiram, Pequenata acordou antes e olhou<br> as hóras, era seis da noite, Pequenata fez a janta e chamou Julia, elas comeram e Pequenata convidou Julia para assistir um filme, elas tinham Vegeflix na tv, elas assistiram enquanto bebiam o resto da<br> coca-cola, e então dormiram...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="avdp7" class="city" style="display:none;">
+<pre id='vimCodeElement'>
+<h5>
+Capitulo 7
+
+Era domingo, Pequenata só queria dormir o dia todo, por que é isso que que ás pessoas fazem no domingo, ela estáva acordada, Pequenata olhou para o relógio e era sete <br>da manhã, e então ela abraçou Julia que estáva na cama dormindo, e então ela dormiu com Julia, ela e Julia acordaram ao mesmo tempo, elas estavam descansadas, e só <br>queriar se divertir, elas tihnam uma tv e um video game na sala, elas jogaram muitos jogos juntas, e se divertiram bastante, Pequenata estava feliz naquele dia, muito <br>feliz, ela tinha um video game chamado Vegetalbox, o video game tinha uma Vegetalbox Live onde você podia fazer um monte de coisas na internet, igual um computador, <br>Pequenata tocou uma musica no aplicativo de música chamado Vegetify, era música folk, ela gostava desse estilo calmo de música, ela e Julia jogaram jogos de corrida, <br>jogos de tiro em primeira pessoa, elas gostavam de jogos desse tipo, Julia disse que ela estava feliz por jogar com Pequenata, Pequenata olhou no relógio e era sete da<br> noite, elas estavam com fome, elas pausaram o jogo chamado Vegetablefall 2, a sequência tinha uma história e não só o multiplayer, Julia veio a cozinha e fez o jantar <br>com a ajuda de Pequenata, elas comeram o jantar e então jogaram um pouco mais de Vegetablefall 2, e então dormiram, antes de dormir Pequenata falou para Julia que ela <br>se divertiu hoje, e que ela queria mais dias assim...
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('text projects')">X</button>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('avdp')"><-</button>
+</h5>
+</pre>
+</div>
+
+<div id="text projects" class="city" style="display:none;">
+<br><br>
+
+<h4>
+Historias(Stories):
+</h4>
+
+<button class="w3-btn w3-white" onclick="openCity('lol')">
+Life Of Littletato (English/Inglês)
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="openCity('avdp')">
+A Vida de Pequenata(Português Brasileiro/Brazilian Portugues)
+</button>
+<br>
+
+<br><br>
+<h4>
+Projetos de Texto(Text Projects):
+</h4>
+
+<button class="w3-btn w3-white" onclick="window.open('http://diario.bitballoon.com/');">
+Diario <span style="color:red;">Novo!(New!)</span>
+</button>
+<br>
+<button class="w3-btn w3-white" onclick="window.open('Diário.html');">
+Diario(local) <span style="color:red;">Novo!(New!)</span>
+</button><br>
+
+<button class="w3-btn w3-white" onclick="window.open('backup/Printdump.html')">
+Printdump
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('4chan.html')">
+4chan
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('PAM.html')">
+PAM
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('Checklist.htm')">
+Checklist
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('Test1.htm')">
+Test Page(Pagina de Testes)
+</button>
+<br>
+</div>
+
+
+
+<div id="images" class="city" style="display:none">
+<br><br>
+
+<!-- botoes de mudança de aba "images","eitas" e "other"-->
+<br>
+  <button class="w3-button w3-yellow" onclick="openCity('imagesex')">Imagens Expandidas</button>
+  <button class="w3-bar-item w3-button w3-purple w3-medium w3-text-black" onclick="openCity('gifs')">GIFS</button>
+  <button class="w3-button w3-red w3-text-black" onclick="openCity('xsync')">Xsync</button>
+<br><br>
+<hr><p><h1>Images</h1><p><hr><br><br><br><br><br>
+
+<!-- Sweet Breeze -->
+
+<!--<img draggable="true" src="https://s1.postimg.org/66v8gj5qh9/sweet_breeze_by_nekojackun-daonqk6.png" alt="Sweet Breeze by Nekojackun" width="50%" class="w3-image" align="right" border="15"><hr>-->
+<img draggable="true" src="img/sweet_breeze_by_nekojackun-daonqk6.png" alt="Sweet Breeze by Nekojackun" width="50%" class="w3-image" align="right" border="15"><hr>
+<h1>Sweet Breeze</h1><hr>
+<a href="http://postimg.org/image/1nt7dk09jf/" target="_blank"><h1 class="fulltext" align="left">
+Sweet Breeze Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Lightning Dust -->
+
+<!--<img draggable="true" src="https://s1.postimg.org/4wfjw1rqzh/58154584_p12_master1200.jpg" alt="Lightning Dust" width="50%" align="right" border="15"><hr>-->
+<img draggable="true" src="img/58154584_p12_master1200.jpg" alt="Lightning Dust" width="50%" align="right" border="15"><hr>
+<h1>Lightning Dust</h1><hr>
+<a href="http://postimg.org/image/9mksugjdcr" target="_blank"><h1 class="fulltext" align="left">
+Lightning Dust Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Himouto Twilight by JonFawkes -->
+
+<!--<a href="https://jonfawkes.deviantart.com/art/Himouto-Twilight-Patreon-Commission-565248249" target="_blank"><img src="https://s1.postimg.org/8chvo51lrh/medium201.jpg" alt="Himouto Twilight by JonFawkes" width="45%" align="right"/></a><hr>-->
+<a href="https://jonfawkes.deviantart.com/art/Himouto-Twilight-Patreon-Commission-565248249" target="_blank"><img src="img/medium201.jpeg" alt="Himouto Twilight by JonFawkes" width="45%" align="right"/></a><hr>
+<h1>Himouto Twilight by JonFawkes</h1><hr>
+<a href="http://postimg.org/image/8n4phagtwr/" alt="Himouto Twilight by JonFawkes" target="_blank"><h1 class="fulltext" align="left">
+Himouto Twilight by JonFawkes Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Shy Horse -->
+
+<!--<a href="https://postimg.org/image/66dz6takl/" target="_blank"><img src="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png" alt="shy_horse_by_witchtaunter-dbbf27n" width="48%" align="right"/></a><hr>-->
+<a href="https://postimg.org/image/66dz6takl/" target="_blank"><img src="img/shy_horse_by_witchtaunter-dbbf27n.png" alt="shy_horse_by_witchtaunter-dbbf27n" width="48%" align="right"/></a><hr>
+<h1>Shy Horse</h1><hr>
+<a href="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png" target="_blank"><h1 class="fulltext" align="left">
+Shy Horse Full</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- So now what by mlpics -->
+
+<!--<a href="https://mlpics.deviantart.com/art/So-now-what-699072152" target="_blank"><img src="https://s1.postimg.org/1yg16pchnx/so_now_what_by_mlpics-dbk7jiw.png" alt="So now what by mlpics" width="47%" align="right"/></a><hr>-->
+<a href="https://mlpics.deviantart.com/art/So-now-what-699072152" target="_blank"><img src="img/so_now_what___by_mlpics-dbk7jiw.png" alt="So now what by mlpics" width="47%" align="right"/></a><hr>
+<h1>So now what</h1><hr>
+<a href="http://postimg.org/image/3j5s669p4b/">
+<h1 class="fulltext" align="left">
+So now what Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Nom Nom Dash -->
+
+<!--<a href="http://haden-2375.deviantart.com/art/Nom-Nom-Dash-681600934" target="_blank"><img draggable="true" src="https://s1.postimg.org/6s4w2ts9a5/nom_nom_dash_by_haden_2375-db9t2na.png" alt="Nom Nom Dash by haden" width="48%" align="right" border="15"></a><hr>-->
+<a href="http://haden-2375.deviantart.com/art/Nom-Nom-Dash-681600934" target="_blank"><img draggable="true" src="img/nom_nom_dash_by_haden_2375-db9t2na.png" alt="Nom Nom Dash by haden" width="48%" align="right" border="15"></a><hr>
+<h1>Nom Nom Dash by haden</h1><hr>
+<a href="http://postimg.org/image/3tslzbjzsr/">
+<h1 class="fulltext" align="left">
+Nom Nom Dash by haden Full</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--21 "<br>" Depois da ultima imagem-->
+</div>
+
+<br>
+<!-- div para a aba "imagensex" -->
+<div id="imagesex" class="tabcontent city" style="display:none">
+<br><br><br>
+<br><br><br><br>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('images')"><-</button><br>
+<!-- Sweet Breeze -->
+<a href="https://s1.postimg.org/66v8gj5qh9/sweet_breeze_by_nekojackun-daonqk6.png">
+<img src="https://s1.postimg.org/66v8gj5qh9/sweet_breeze_by_nekojackun-daonqk6.png" alt="Sweet Breeze" width="70%" align="left"></a>
+<!-- Lightning Dust -->
+<a href="https://s1.postimg.org/4wfjw1rqzh/58154584_p12_master1200.jpg">
+<img src="https://s1.postimg.org/4wfjw1rqzh/58154584_p12_master1200.jpg" alt="Lightning Dust" width="70%" align="left"></a>
+<!-- Aftercamp Sunset Shimmer -->
+<a href="https://s1.postimg.org/8chvo51lrh/medium201.jpg" alt="Himouto Twilight by JonFawkes">
+<img src="https://s1.postimg.org/8chvo51lrh/medium201.jpg" alt="Himouto Twilight by JonFawkes" width="70%"></a>
+<!-- Shy Horse -->
+<a href="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png">
+<img src="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png" alt="Shy Horse" width="70%" align="left"></a>
+<!-- So now what by mlpics -->
+<a href="https://s1.postimg.org/1yg16pchnx/so_now_what_by_mlpics-dbk7jiw.png">
+<img src="https://s1.postimg.org/1yg16pchnx/so_now_what_by_mlpics-dbk7jiw.png" alt="So now what by mlpics" width="70%" align="left"></a>
+<!-- Nom Nom Dash -->
+<a href="https://s1.postimg.org/6s4w2ts9a5/nom_nom_dash_by_haden_2375-db9t2na.png">
+<img src="https://s1.postimg.org/6s4w2ts9a5/nom_nom_dash_by_haden_2375-db9t2na.png" alt="Nom Nom Dash by haden" width="70%" align="left"></a>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('images')"><-</button>
+<br><br><br><br>
+</div>
+<br>
+
+<div id="blocklist" class="city" style="display:none">
+<br><br>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('eitas')">Eitas for the night</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('animes')">Animes e Desenhos</button>
+</div>
+
+<div id="animes" class="tabcontent city" style="display:none">
+<br><br>
+
+</div>
+
+<div id="eitas" class="tabcontent city" style="display:none">
+<br><br>
+
+</div>
+
+<br>
+<div id="game" class="tabcontent city" style="display:none">
+<button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="window.open('Game/Start.html');"><a href="Game/Start.html">Game Start!</a></button>
+</div>
+<br>
+<div id="gifs" class="tabcontent city" style="display:none">
+<br><br>
+  <button class="w3-button w3-purple w3-text-black" onclick="openCity('gifsex')">Gifs Expandidas</button>
+<br><br><br>
+
+<!-- Luna SUPER cute! -->
+<img src="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif" alt="Luna SUPER cute!" width="50%" align="right" border="15"><hr>
+<h1>Luna SUPER cute!</h1><hr>
+<a href="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif"><h1 class="fulltext" align="left">
+Luna Half cute and half evil Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Luminous Siren -->
+<img src="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif" alt="Luminous Siren" width="49%" align="right" border="15"><hr>
+<h1>Luminous Siren</h1><hr>
+<a href="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif"><h1 class="fulltext" align="left">
+Luminous Siren Fullscreen</h1></a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Animated DJ -->
+<img src="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif" alt="Animated DJ" width="50%" align="right" border="15"><hr>
+<h1>Animated DJ</h1><hr>
+<a href="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif"><h1 class="fulltext" align="left">
+Animated DJ Fullscreen</h1></a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<!-- div para a aba "gifsex" -->
+<div id="gifsex" class="tabcontent city" style="display:none">
+<br><br>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('gifs')"><-</button>
+<!--Luna SUPER cute!-->
+<a href="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif">
+<img src="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif" alt="Luna SUPER cute!" width="50%" align="left"></a><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif">
+<img src="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif" alt="Luminous Siren" width="50%" align="left"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif">
+<img src="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif" alt="Animated DJ" width="50%" align="left"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button class="w3-bar-item w3-button w3-grey w3-text-black" onclick="openCity('gifs')"><-</button>
+</div>
+<br>
+<div id="xsync" class="city" style="display:none">
+<!--
+<p><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>39 Images here</h1>
+<br><br><br><br><br><br><br><br>
+<a href="https://e621.net/post/show/777071">
+<img src="https://static1.e621.net/data/d4/6f/d46f998385754a99058b95fc7fdb9ed6.jpg" alt="1 twi" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2705415">
+<img src="https://cloppics.files.wordpress.com/2017/09/1473353377953.jpg" alt="2 twintails" width="40%"></a><br>
+<a href="http://www.sexychinese.net/imiss%E7%88%B1%E8%9C%9C%E7%A4%BE-vol-040-%E6%9D%8E%E7%8E%89%E6%B4%81daisy-57p-5283/">
+<img src="https://cloppics.files.wordpress.com/2017/09/1kti9kr.jpg" alt="3 lari" width="50%"></a><br>
+<a href="https://danbooru.donmai.us/posts/2353593">
+<img src="https://danbooru.donmai.us/data/__mei_overwatch_drawn_by_dandon_fuga__2c6034405486530a95f16be401fc017d.jpg" alt="4 mei" width="40%"></a><br>
+<a href="https://chan.sankakucomplex.com/post/show/5635690">
+<img src="https://cloppics.files.wordpress.com/2017/09/tumblr_obxnmuepno1ubou7ro1_1280.png" alt="5 wee" width="50%"></a><br>
+<a href="http://kawaiidetectiveenthusiast.tumblr.com/post/144846788295/i-joined-the-two-together-decided-i-might-as-well">
+<img src="https://68.media.tumblr.com/fa0680e13925ad99759bb8f2dc518bdd/tumblr_o7o5h19r4z1ucep5mo1_1280.png" alt="6 d.va" width="50%"></a><br>
+<a href="https://e621.net/post/show/651162">
+<img src="https://static1.e621.net/data/51/b6/51b619c28c6fa022a0e06184d4dcb8a1.jpg" alt="7 cherri" width="35%"></a><br>
+<a href="http://s.fap.to/photo/700007304/#192">
+<img src="http://x.imagefapusercontent.com/u/japavidols/3369581/1215638048/haruna-megumi-814548.jpg" alt="8 ayu" width="40%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=1556660">
+<img src="https://simg4.gelbooru.com//images/d5/10/d51032ebb54c36c49adf383d1b286ccd.jpeg" alt="9 len rin" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2054674">
+<img src="https://gelbooru.com//images/85/19/8519256cbf52d60b36c64872a68882b8.jpg" alt="10 suq" width="50%"></a><br>
+<a href="http://www.backchina.com/forum/20160729/info-1399777-1-1.html">
+<img src="http://mmbiz.qpic.cn/mmbiz/VAbaNB1HcC0xRS4gFJibJLRLH5CzicA7MIfoPfUyV36DtEhwLY6l1tDQrE0RphvIMDVFyJtB8xpIsuCmTMNicYZxA/0?wx_fmt=jpeg" alt="11 desq" width="50%"></a><br>
+<a href="https://e621.net/post/show/741840">
+<img src="https://static1.e621.net/data/86/79/8679b60eb588e8478053bc1dd6a995b4.png" alt="12 zecora" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=3099952">
+<img src="https://cloppics.files.wordpress.com/2017/09/92cda07bf7dfc068774ec9b59ad01017.jpg" alt="13 miyaura" width="40%"></a><br>
+<a href="https://derpibooru.org/488251">
+<img src="https://derpicdn.net/img/view/2013/12/2/488251.jpg" alt="14 futa orgy" width="50%"></a><br>
+<a href="https://e-hentai.org/s/bd34fa9ca4/982863-926">
+<img src="https://cloppics.files.wordpress.com/2017/09/0968_1377401045-scorpdk_130822_03c.jpg" alt="15 rainbow sexy" width="35%"></a><br>
+<a href="https://chan.sankakucomplex.com/post/show/5669838">
+<img src="https://cloppics.files.wordpress.com/2017/09/sinner-artist-sombra-overwatch-overwatch-3466197.jpeg" alt="16 sombra" width="50%"></a><br>
+<a href="https://im9.eu/picture/hentai-giant-hentai-dump-142-images-contains-some-futanari-trap-furry-yuri-125">
+<img src="https://p.im9.eu/hentai-giant-hentai-dump-142-images-contains-some-futanari-trap-furry-yuri-125.jpg" alt="17 rosa" width="45%"></a><br>
+<a href="https://derpibooru.org/1263288">
+<img src="https://derpicdn.net/img/view/2016/10/2/1263288.gif" alt="18 futashy" width="50%"></a><br>
+<a href="https://e621.net/post/show/511612">
+<img src="https://static1.e621.net/data/6c/6b/6c6b1551539cb450f6688aa9c5a70783.jpg" alt="19 lunachibi" width="30%"></a><br>
+<a href="https://e621.net/post/show/591271">
+<img src="https://static1.e621.net/data/fc/50/fc503e11fd3d787839bb334819597c06.png" alt="20 shyorgy" width="40%"></a><br>
+<a href="http://nsfwee.tumblr.com/tagged/wee/page/2">
+<img src="http://68.media.tumblr.com/9bcbae6b0b3983788665c71753c41ef2/tumblr_oelvfrktl11ubou7ro1_1280.png" alt="21 weeros" width="50%"></a><br>
+<a href="https://derpibooru.org/1272034">
+<img src="https://cloppics.files.wordpress.com/2017/09/1999474-equestria_girls-friendship_is_magic-legend_of_everfree-my_little_pony-spectre-z-sunset_shimmer-animated.gif" alt="22 sunsetbootyful" width="30%"></a><br>
+<a href="https://e621.net/post/show/1029593">
+<img src="https://cloppics.files.wordpress.com/2017/09/1279890.png" alt="23 casual velvet" width="25%"></a><br>
+<a href="https://derpibooru.org/1006813">
+<img src="https://derpicdn.net/img/view/2015/10/21/1006813.png" alt="24 minuettedonut" width="50%"></a><br>
+<a href="https://derpibooru.org/1158702">
+<img src="https://derpicdn.net/img/view/2016/5/20/1158702.jpg" alt="25 lemonsexy" width="50%"></a><br>
+<a href="https://derpibooru.org/865954">
+<img src="https://derpicdn.net/img/view/2015/4/5/865954.jpg" alt="26 maneac-um" width="50%"></a><br>
+<a href="https://derpibooru.org/991149">
+<img src="https://derpicdn.net/img/view/2015/9/30/991149.png" alt="27 pommelfatherpc" width="45%"></a><br>
+<a href="https://derpibooru.org/1126520">
+<img src="https://cloppics.files.wordpress.com/2017/09/1126520.png" alt="28 flurrysexy" width="50%"></a><br>
+<a href="http://thatpervert.com/tag/Fluttershy/194">
+<img src="http://img0.thatpervert.com/pics/post/mlp-porn-r34--Fluttershy-3266024.jpeg" alt="29 smellyshy" width="45%"></a><br>
+<a href="https://e-hentai.org/s/233bbab88d/724835-104">
+<img src="https://e-hentai.org/fullimg.php?gid=724835&page=104&key=e2uhqgd8yc6" alt="30 cutebloom" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2245014">
+<img src="https://cloppics.files.wordpress.com/2017/09/33_stockings_39.jpg" alt="31 static-brownie" width="50%"></a><br>
+<a href="http://scdk-nsfw.tumblr.com/tagged/nsfw/page/4">
+<img src="http://68.media.tumblr.com/ed3d3c924fccc5e6312977d6fcc88f7e/tumblr_ogcwz0yl2r1r0alxmo1_1280.jpg" alt="32 ahelestia" width="50%"></a><br>
+<a href="https://derpibooru.org/1352830?q=artist%3Asumin6301">
+<img src="https://cloppics.files.wordpress.com/2017/09/1352830.jpeg" alt="33 cutelight" width="37%"></a><br>
+<a href="https://derpibooru.org/552337/">
+<img src="https://cloppics.files.wordpress.com/2017/09/552337.jpeg" alt="34 awesomebuttshy" width="40%"></a><br>
+<a href="https://8ch.net/clop/index.html">
+<img src="https://cloppics.files.wordpress.com/2017/09/album-3-in-a-roll.png" alt="35 3 in a roll" width="49%"></a><br>
+<a href="https://derpibooru.org/1486243?q=artist%3Atwistedscarlett60%2Cfluttershy">
+<img src="https://cloppics.files.wordpress.com/2017/09/1486243.png" alt="36 sexy flutter" width="40%"></a><br>
+<a href="http://boards.4chan.org/s/thread/17601541">
+<img src="https://cloppics.files.wordpress.com/2017/09/album-3-in-a-roll-2.png" alt="37 3 in a roll 2" width="49%"></a><br>
+<a href="https://derpibooru.org/1283843?q=twilight+sparkle%2Cequestria+girls">
+<img src="https://cloppics.files.wordpress.com/2017/09/1283843.png" alt="38 awesome twilight spice" width="46%"></a><br>
+<a href="https://derpibooru.org/1283843?q=twilight+sparkle%2Cequestria+girls">
+<img src="https://cloppics.files.wordpress.com/2017/09/1501326.png" alt="39 awesome pinkie pie" width="39%"></a><br>
+-->
+</div>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="http://www.mediafire.com/file/8rvw8d3kvovy3uf/All_Photos.rar" class="download"><h2 align="right" style="font-family:arial; color:#003300;" class="download">Download All Photos</h2></a>
+
+<center style="color: #006622;">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><img src="img/pocb.png" alt="POCB logo" width="15%" style="display:block;margin:auto;">
+<hr><p valign="bottom"><small>All rights reserved to Stake's Enterprise</small><sup>tm</sup>. @2018</p><hr>
+</center>
+
+<a href="#top"><button class="w3-transparent w3-display-topright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OMBxalPU.jpg" /></button></a>
+<a name="bot"></a>
+</body>
+</html>

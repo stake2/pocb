@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<head>
+<title>Play "Arctic Monkeys - [2005] Five Minutes With Arctic Monkeys"</title>
+<meta charset="UTF-8">
+<link rel="icon" href="file:///D:\Pages\cdn\POCB.png">
+<link rel="stylesheet" type="text/css" href="file:///D:\Pages\cdn\poc.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="file:///D:\Pages\cdn\w3.css">
+<link rel="stylesheet" href="file:///D:\Pages\cdn\w3.css" />
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" type="text/css" href="file:///D:\Pages\cdn\imghover.css">
+<meta name="revised" content="Stake's Enterprisetm, 20/05/2018" />
+<meta name="author" content="Stake Ferreira" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="file:///D:\Pages\cdn\jquery.jplayer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+<script src="file:///D:\Pages\cdn\playlist.js"></script>
+
+</head>
+<body>
+<button class="w3-button w3-white" style="float:right;" onclick="window.open('file:///D:/Pages/Foobar Albums/Foobar Albums.html');">Open site: "Foobar Albums"</button><br><br>
+<button class="w3-button w3-white" style="float:right;" onclick="window.open('file:///D:/Canais/Canais.html');">Open site: "Canais Youtube"</button>
+<script src="file:///D:\Pages\cdn\myFunction.js"></script>
+<script src="file:///D:\Pages\cdn\tabs.js"></script>
+<br><br><br><br>
+<center>
+<pre>
+<h5 class="w3-btn w3-white">Play "Arctic Monkeys - [2005] Five Minutes With Arctic Monkeys"</h5>
+</pre>
+<!--<h3 class="w3-text-white">01 - Fake Tales Of San Francisco</h3><br>
+<audio controls="controls" preload="auto" onended="play()"><source src="file:///D:\Cloud Drive\jogos\Izaque\Musicas\Albums\Arctic Monkeys\[2005] Five Minutes With Arctic Monkeys [EP]\01%20-%20Fake%20Tales%20Of%20San%20Francisco.mp3" type="audio/mpeg"></audio>
+<br><br><h3 class="w3-text-white">02 - From The Ritz To The Rubble</h3><br>
+<audio class="nxt" controls="controls" preload="auto"><source src="file:///D:\Cloud Drive\jogos\Izaque\Musicas\Albums\Arctic Monkeys\[2005] Five Minutes With Arctic Monkeys [EP]\02 - From The Ritz To The Rubble.mp3" type="audio/mpeg"></audio>
+-->
+<script>
+$("#jpId").jPlayer( {
+  ready: function() { // The $.jPlayer.event.ready event
+    $(this).jPlayer("setMedia", { // Set the media
+      mp3: "file:///D:\Cloud Drive\jogos\Izaque\Musicas\Albums\Arctic Monkeys\[2005] Five Minutes With Arctic Monkeys [EP]\01%20-%20Fake%20Tales%20Of%20San%20Francisco.mp3"
+    }).jPlayer("play"); // Attempt to auto play the media
+  },
+  ended: function() { // The $.jPlayer.event.ended event
+    $(this).jPlayer("play"); // Repeat the media
+  },
+  supplied: "mp3"
+);
+
+$("#jumpToTime").click( function() {
+  $("#jpId").jPlayer("play", 42); // Begins playing 42 seconds into the media.
+});
+</script>
+<audio autoplay id="player" controls="controls" onended="txt()" src="file:///D:\Cloud Drive\jogos\Izaque\Musicas\Albums\Arctic Monkeys\[2005] Five Minutes With Arctic Monkeys [EP]\01%20-%20Fake%20Tales%20Of%20San%20Francisco.mp3"></audio>
+<script src="file:///D:\Pages\cdn\playlist.js"></script>
+</center>
+</body>
+</html>

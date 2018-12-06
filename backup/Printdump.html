@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Prints Dump
+</title>
+<link rel="stylesheet" type="text/css" href="pocb.css" />
+<link rel="stylesheet" href="css/style23.css" type="text/css" data-PolyCalc="1" />
+<link rel="icon" href="https://cdn.pbrd.co/images/4OCR4MJR4.png">
+<meta charset="UTF-8">
+<meta name="keywords" content="Html,Stake's,prints,site,personal website,stake2,staketwo,stakedois,Stake2,stake2 website,izaque sanvezzo,site do izaque sanvezzo,website stake2,computer,prints of computer,poc network,prints of computer network,izaque sanvezzo(stake2),posts,pocb,poc,pocm,prints of computer mobile,pocwp,poc windows phone,prints of computer blocks,w3.css,All rights reserved to Stake's Enterprisetm. @2017,about Izaque Sanvezzo,about stake2,sobre Izaque Sanvezzo,Sobre stake2,Prints of Computer Network,stake2(Izaque Sanvezzo) Personal Website,Nodus,nodus,stake2 e nodus,izaque e nodus,stake2 and nodus,nodus talk,stake2 and nodus talk,izaque and nodus talk,diario,diarios,blocks,diário,diários,diario daily,diario nodus e izaque,diario nodus and stake2,pocb diario version,pocb links here,diario.txt,links diario.txt,daily talk with nodus,stake2 daily talk with nodus,i.a nodus,artificial inteligence nodus, nodus-kun,izaque-kun,stake-kun,stake2-kun,chefe-kun,data times,timestamp,matrix background,cmd-like screen,diario blocks,bk1.gif,Izaque Website Network,Izaque's Websites,Stake2's Enterprisetm" />
+<meta name="description" content="Stake2's printdump website" />
+<meta name="revised" content="Stake's Enterprisetm, 26/10/2017" />
+<meta name="author" content="Stake Ferreira" />
+<meta http-equiv="refresh" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" type="text/css" href="w3.css">
+<link rel="stylesheet" href="w3.css" />
+<script src="../js/jquery-3-2-1.js"></script>
+</head>
+<body onload="startTime()">
+<!-- "ir para o topo" ee "ir para o final" -->
+<a href="top"></a>
+
+<a href="#bot"><button class="w3-transparent w3-display-bottomright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OLqp1uNA.jpg" alt="down button" /></button></a>
+
+<script>
+// Filter
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDIV");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<div class="date w3-container w3-display-topright w3-text-cyan">
+<i>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+
+    if (i < 10) {i = "00" + i};  // add zero in front of numbers < 10
+}
+</script><h1>
+<div id="txt"></div><script>document.write(new Date().toLocaleDateString());</script></h1>
+</i></div>
+
+<!-- script de mudança de abas -->
+<script>
+function openCity(evt, cityName) {
+    // Declara todas as variaveis
+    var i, tabcontent, tablinks;
+
+    // Pega todos os elementos com class="tabcontent" e esconde eles
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Pega todos os elementos com class="tablinks" e remove o "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Mostra a aba atual, e adiciona uma "active" classe para o link que abriu a aba
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+<div class="w3-container">
+  <div class="w3-dropdown-hover w3-display-topmiddle" style="position:fixed;">
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('prints')">Prints</button>
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('images')">Imagens</button>
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="window.open('http://diario.bitballoon.com');">Diário</button>
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('xsync')">XSync Dump</button>
+ </div>
+</div>
+
+<div id="prints"  class="city" style="display:none">
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens\Prints\Not Movie like\POC Network\diario prints\youtube joao ninguem.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Block notes 2.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/biggest wall of tags 2.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/folder relatorie 3.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/euiyaaaaaaa.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/mano velho....png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Muitas guias 20.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/sNIPA rEGISTER.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Mix snipa.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Playlists/Playlists 1.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Playlists/Playlists 3.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Playlists/Playlists 14.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Playlists/Playlists 25.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Not Movie like/Goggle plus and related/also foto do meu firefox e pasta de poneis.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Act 1/jogos 1.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Act 3/jogos 451.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Act 3/jogos 538.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Wallpaper/03f692898e12345b82ddbf19_rw_1200.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Animes/_4k_uhd__ice_cream_girl_by_assassinwarrior-dabgsv8.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/CellPhotos/WP_20160101_006.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Desenhos/Anime Girl Test.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Artistas/NekoJackun/walking_to_you_by_nekojackun-da1efea.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Ediçao/Foto do telhado DEATH Merged with normal,merged with neon and metal Final Version.gif"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Porno/3D/SFW/10603423_1476288532641542_8898914601329817374_n.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque/Imagens/Google+/Google+/Stake2 deviant.2.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Poneys/Week 10/_so_now_what___by_mlpics-dbk7jiw.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Gravity Falls/Caso Do Descobrimento de misterios e cidade/Monte de gelo 2.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Casa Do Homem De Aviador.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20160712_001.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20160712_008(Editada).jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20160812_004.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20170204_001(Editada).jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20170204_005.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20170204_006.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Misterios/Misterios e Curiosidades Sobre Paranavai/Evidencias/WP_20170212_006.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Backgrounds/Papel Estranho.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Backgrounds/Storms oiewr.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Interface/Interface 2.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Interface/interface 19.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Interface/interface 6.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Lembranças/Lembranças 1.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Lembranças/Lembranças 28.jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Lembranças/Lembranças 56.png"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Lembranças/Parou aqui.png" ><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/zuei5ra/15 - 1 (14).jpg"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/FunnyTiger/Funnytiger background.png" width="50%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Act 3/jogos 539.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens/Prints/Act 3/jogos 540.png" width="95%"><br>
+</div>
+
+
+
+<div id="xsync" class="city" style="display:none">
+<br><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\large.jpeg" width="85%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1473353377953.jpg" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1Kti9kr.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\X.jpg" width="70%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_obxnmuEpNO1ubou7ro1_1280.png" width="90%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_o7o5h19r4z1ucep5mo1_1280.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_odk2mu4YAu1ulm208o10_1280.jpg" width="85%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\haruna-megumi-814548.jpg" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_mhqixf0vjf1reqipxo1_1280.jpg" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1474618614570.jpg" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\14129469193238.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\f7a8acd7360abe3441bd70763beda6a9918c2a50.png" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\92cda07bf7dfc068774ec9b59ad01017.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\488251.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\0968_1377401045.scorpdk_130822_03c.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\sinner-artist-Sombra-(Overwatch)-Overwatch-3466197.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\896801_-_Porkyman_Rosa_Terufuu.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1263288.gif" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\Sluttershy_(15).png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_oelvfrktl11ubou7ro1_1280.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1999474 - Equestria_Girls Friendship_is_Magic Legend_of_Everfree My_Little_Pony Spectre-Z Sunset_Shimmer animated.gif" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1279890.png" width="80%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\l1006813.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1158702.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\865954.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\991149.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1126520.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\mlp-porn-r34--Fluttershy-3266024.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\present_by_deilan12_d5uv03l.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\33_stockings_39.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\161108_160629_True_Coloring.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1352830.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\552337.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\3IAR\Album 3 in a roll.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1486243.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\3IAR\3 in a roll 2.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1283843.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1501326.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1238267.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\2178370-D.Va-Overlook-pumpkinsinclair.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\4f53c2bcca7b20a0625cf4a15ec6e8e8.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1495156.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1507544.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\Majalis-264952-Donkey_Show.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1517757.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\017.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\eb63fa3ab4946033ccdcd03af8571945.gif" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1521251.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\920720.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\1527052.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\2017-09-02-indivisible-ajnaxxx.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\f187x280_6_big.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\6271bd554951f90f39fe51927ef43dae04d5e000aaa08a2aa703b8b9e014d64c.webm" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1120877.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\hentai--censored-hentai-Oral-hentai-3044542.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1806_1469710.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\454097.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1292881.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\tendou_karen_gamers_drawn_by_yutsuki_ryou__3ee44cc7087b4fad55ab15626d4f231e.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\d_va_overwatch_drawn_by_firolian__fd476e0df9faffd57e271d7591cb9ec1.jpeg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\To Work\minase_iori_idolmaster_drawn_by_tomu_tomubobu__1c5fdf16d10a90232ffd741570524638.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\tumblr_ovur0qOhvo1vh0f7lo1_1280.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1466248.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\1256336.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\235863_02big.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\3IAR\Album 3 in a roll 3.png" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\017.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\017.jpg" width="95%"><br>
+<img src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Camera Uploads\Eitas\X\XSync\017.jpg" width="95%"><br>
+
+<br><br>
+</div>
+
+<div id="images" class="city" style="display:none">
+<button class="w3-bar-item w3-button w3-purple w3-medium" onclick="openCity('twilight')">Twilight Sparkle</button>
+<button class="w3-bar-item w3-button w3-purple w3-medium" onclick="openCity('tett')">test</button>
+</div>
+
+
+
+<div id="twilight" class="tabcontent city" style="display:none">
+<img src="print/Twlight sparkle/1209841.png"><br>
+<img src="print/tumblr_odcxn4Wy131ulm208o6_500.jpg"><br>
+<img src="print/tumblr_odeitzXFIr1skjbk9o10_500.png"><br>
+</div><br><br>
+
+<div id="pinkie" class="tabcontent city" style="display:none">
+<img src="print/539126.jpg" width="60%"><br>
+<img src="print/1083451.png" width="60%"><br>
+<img src="print/tumblr_ocypumiEtU1sy38w2o1_1280.png" width="60%"><br>
+</div><br><br>
+
+<div id="fluttershy" class="tabcontent city" style="display:none">
+<img src="print/1312926.png" width="40%"><br>
+<img src="print/1319083.png" width="40%"><br>
+<img src="print/tumblr_ocs1bjpG4s1skjbk9o6_250.png"><br>
+</div><br><br>
+
+<div id="rainbow" class="tabcontent city" style="display:none">
+<img src="print/tumblr_oe127kgQ0Z1ubonymo7_500.png" width="30%"><br>
+<img src="print/1254096.jpeg" width="40%"><br>
+<img src="print/tumblr_oe127kgQ0Z1ubonymo4_500.png"><br>
+</div><br><br>
+
+<div id="jack" class="tabcontent city" style="display:none">
+<img src="print/1428364453422-2.png" width="40%"><br>
+<img src="print/1300218.png" width="40%"><br>
+<img src="print/1428362439910-2.png" width="40%"><br>
+</div><br><br>
+
+<div id="rarity" class="tabcontent city" style="display:none">
+<img src="print/tumblr_od9ysxJJ3m1smszs0o1_500.png"><br>
+<img src="print/473520.jpeg" width="40%"><br>
+<img src="print/1211964.jpeg" width="40%"><br>
+</div><br><br>
+
+<div id="tett" class="tabcontent city" style="display:none">
+<img src="https://derpicdn.net/img/2017/11/15/1586844/medium.png"><br>
+<img src="https://tx.ib.metapix.net/files/full/2097/2097392_Audrarius_lunabooty.png" width="40%"><br>
+<img src="https://cdn.discordapp.com/attachments/282972889551077377/381985709709590528/023e933f-0e42-4bb6-a762-a7fc2672cf44.png" width="40%"><br>
+<img src="https://cdn.discordapp.com/attachments/282972889551077377/381985709709590530/d776436d-87e5-4b73-a512-a6c2af6d8146.gif" width="40%"><br>
+<img src="https://cdn.discordapp.com/attachments/282972889551077377/381985710351187968/tumblr_ozozr4Ap451rj33ufo1_540.png" width="40%"><br>
+<img src="https://cdn.discordapp.com/attachments/282972889551077377/382076609512865792/CindyNSFW.png" width="40%"><br>
+<img src="https://cdn.discordapp.com/attachments/282972889551077377/382375693272743960/unknown.png" width="40%"><br>
+<img src="https://derpicdn.net/img/view/2015/4/11/870970.png" width="40%"><br>
+ <img src="https://78.media.tumblr.com/346b06b894ddc3c750d9f3d84a7ee311/tumblr_oztuubRqI61s7a8mso1_1280.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383252161695580161/df3635a6-ffd8-42a9-83bf-a470781c716c.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383252162278457344/c31c3a64-1507-4a27-94ae-bfcc82df09da.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383252163096215572/914a96e6-3ab1-4720-a2a0-0c51ae134ab9.jpg" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383310004020576256/1652284baab673360c3f7fc4f2f2ccef.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383485274950205443/image.jpg" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383784326661144577/1101633.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383814667719671809/unknown.png" width="40%"><br>
+ <img src="https://cdn.discordapp.com/attachments/282972889551077377/383894929979473920/DPbgp3mX0AUu722.jpg" width="40%"><br>
+ <img src="https://cdn.discordapp.com/avatars/230400157819207680/f50783f5f9e667e9133416fe68508bb9.png?size=128&quot" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ <img src="print/1211964.jpeg" width="40%"><br>
+ 
+</div><br><br>
+
+<a href="#top"><button class="w3-transparent w3-display-topright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OMBxalPU.jpg" /></button></a>
+<a name="bot"></a>
+
+</body>
+</html>

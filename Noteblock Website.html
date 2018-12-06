@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Noteblock Website
+</title>
+<link rel="stylesheet" type="text/css" href="css/Noteblock.css" />
+<link rel="icon" href="https://cdn.pbrd.co/images/tVUQ7Gg8.png">
+<meta charset="UTF-8" />
+<meta name="keywords" content="Html,Stake's," />
+<meta name="description" content="Mixed upload." />
+<meta name="revised" content="Stake's Enterprise,11/05/2017" />
+<meta ame="author" content="Stake Ferreira" />
+<meta http-equiv="refresh" content="30" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="css/w3.css" />
+</head>
+<body onload="startTime()">
+
+<a href="top"></a>
+
+<a href="#bot"><button class="button4"><img src="img/down.jpg" /></button></a>
+
+<div class="date">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script><h1 style="float:right;">
+<div id="txt"><script>document.write(new Date().toLocaleDateString());</script></h1>
+</div></div><div class="w3-bar">
+  <button class="smap w3-bar-item w3-white w3-border-0" onclick="window.open('../Sitemap.html');">
+    <h2>Sitemap</h2></button>
+
+  <button class="poc" onclick="window.open('../Prints of Computer/Prints of Computer.html');">
+    <img src="../Prints%20of%20Computer/img/POC.png" alt="poc logo" width="107" height="94"></button>
+
+  <button class="pocb" onclick="window.open('../Prints of Computer Blocks/Prints of Computer Blocks.html');">
+    <img src="../Prints%20of%20Computer Blocks/img/POCB.png" alt="pocb logo" width="107" height="94"></button>
+
+  <button class="pocm" onclick="window.open('../Prints of computer mobile(PC Rapido do pai EDITION)/Prints of Computer Mobile.html');">
+    <img src="../Prints%20of%20computer mobile(PC Rapido do pai EDITION)/img/POCM logo.png" alt="pocm logo" width="107" height="94"></button>
+
+  <button class="nw" onclick="window.open('../Noteblock Website/Noteblock Website.html');">
+    <img src="../Noteblock%20Website/img/NW.png" alt="nw logo" width="106" height="94"></button>
+
+  <button class="posts" onclick="window.open('../Posts/Posts.html');">
+    <img src="../Posts/img/Posts.png" alt="posts logo" width="106" height="94"></button><br>
+</div>
+
+<p>
+
+<h2>Papa Roach-Face Everything and Rise with lyrics</h2>
+ <audio controls preload="auto">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="audio/Papa Roach-Face Everything and Rise with lyrics.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>  
+
+<br>
+
+<div id="list" class="tab">
+<h1><iframe src="../../../bloco De notas/Effort/(Mixed)/(Mixed)(27.05.17;18;51).txt"  frameborder="0" height="82000"
+      width="100%"></iframe></h1>
+</div>
+
+<!-- <a href="bot"></a> -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<!-- 
+Button antigo
+  <button onclick="window.open('../Prints of Computer.html');">
+    <h2>Prints of Computer</h2></button> -->
+
+<!-- 
+button com imagen
+<button id="close" class="closing" onClick="window.open('../Prints of Computer.html');"><img src="img/poc button.png" /></button> -->
+
+<a href="#top"><button align="right" valign="center" class="button3"><img src="img/up.jpg" /></button></a>
+
+<a name="bot"></a>
+
+</body>
+</html>
